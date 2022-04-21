@@ -3,6 +3,7 @@
 speskilltest();
 narsist();
 parity();
+reverseBlue();
 function speskilltest()
 {
     // narsist ();
@@ -68,7 +69,14 @@ function speskilltest()
 
     function reverseBlue()
     {
+        function search($n, $del)
+        {
+            array_diff($n, [$del]);
+        }
         //minus
+        $n = [1,2,3,4,5];
+        $del = 5;
+        echo search($n, $del);
     }
     
 }
