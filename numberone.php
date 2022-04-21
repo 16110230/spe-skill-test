@@ -41,21 +41,24 @@ function speskilltest()
     {
         function getParity( $n)
         {
-            // $parity = 0;
-            // while ($n)
-            // {
-            //     $parity = !$parity;
-            //     $n = $n & ($n - 1);
-            // }
-            // foreach ($n as $data){
-
-            // }
-            // return $parity;
+            $parity = 0;
+            while ($n)
+            {
+                $parity = !$parity;
+                $n = $n & ($n - 1);
+            }
+            return $parity;
         }
          
             $n = [1,2,10];
-            echo "Parity of no ",$n ," = " ,
-                  getParity($n)? "odd": "even";
+            foreach($n as $data){
+                echo "<br>";
+                echo "Parity of no ",$data ," = " ,
+                getParity($data)? "odd": "even";
+                echo "<br>";
+
+            }
+           
     }
     
 }
