@@ -60,6 +60,16 @@ function speskilltest()
             }
            
     }
+
+    function needleHaystack()
+    {
+        //minus
+    }
+
+    function reverseBlue()
+    {
+        //minus
+    }
     
 }
 
